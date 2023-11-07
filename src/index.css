@@ -1,0 +1,118 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+  text-align: center;
+  gap: 10px;
+}
+a:hover {
+  color: #535bf2;
+}
+.deleteicon {
+  color: red;
+}
+body {
+  margin: 0;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.table .selected {
+  background-color: #e6f3ff;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.pagination a:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.pagination a.active {
+  background-color: #0275d8; /* Task 1: Brighter color */
+}
+
+.pagination a.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.delete-button {
+  padding: 8px 16px;
+  background-color: red;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+  bottom: 10px;
+  position: relative;
+}
+
+.delete-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.botton {
+  display: flex;
+  gap: 250px;
+}
